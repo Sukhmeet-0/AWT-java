@@ -30,7 +30,7 @@ public class AWT11 extends Frame implements ActionListener {
     
        String a=t1.getText();
        String b=t2.getText();
-       String c=a+b;
+       String c=a+" "+b;
        System.out.println(c);
        t3.setText(c);
     }
