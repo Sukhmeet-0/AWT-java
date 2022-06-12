@@ -6,7 +6,9 @@ public class AWT25 extends Frame{
     private Menu edit;
     private Menu view;
     private Menu search;
-    private MenuItem open,save,saveAll,close,closeAll;
+    private Menu lala ;
+    private Menu baba;
+    private MenuItem open,save,saveAll,close,closeAll,yaya,kaka;
     AWT25(){
         setVisible(true);
         setSize(400,300);
@@ -18,6 +20,8 @@ public class AWT25 extends Frame{
         edit=new Menu("Edit");
         view =new Menu("View");
         search=new Menu("Search");
+        lala=new Menu("Lala");
+        baba=new Menu("Baba");
         
         setMenuBar(mb);
         
@@ -31,12 +35,20 @@ public class AWT25 extends Frame{
         saveAll=new MenuItem("Save All");
         close=new MenuItem("Close");
         closeAll=new MenuItem("Close All");
+        yaya=new MenuItem("Yaya");
+        kaka=new MenuItem("Kaka");
+        
+        baba.add(kaka);
+
+        lala.add(yaya);
+        lala.add(baba);
 
         file.add(open);
         file.add(save);
         file.add(saveAll);
         file.add(close);
         file.add(closeAll);
+        file.add(lala);
 
         open.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
